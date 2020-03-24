@@ -21,6 +21,7 @@ body, html{
 
     height: 130px;
     width: 100px;
+    margin: 40px;
 
     display: flex;
     align-items: center;
@@ -30,17 +31,36 @@ body, html{
     border: 2px solid #000000;
     box-sizing: border-box;
 
+    transition: all 0.07s;
+
     display: flex;
     flex-direction: column;
 
 }
+
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px #ffc600;
+    box-color: #ffc600
+
+}
+
+.playing{
+
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px #ffc600;
+    box-color: #ffc600
+
+}
+
 
 .buttonText {
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 62px;
+    font-size: 45px;
     line-height: 73px;
     display: flex;
     align-items: center;
@@ -50,12 +70,13 @@ body, html{
 
 }
 
+
 .buttonLabel {
 
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 15px;
     line-height: 28px;
     display: flex;
     align-items: center;
@@ -65,24 +86,4 @@ body, html{
 
 }
 
-.buttonSelected{
 
-    height: 130px;
-    width: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: column;
-
-
-    border: 9px solid rgba(189, 255, 0, 0.8);
-    filter: blur(4px);
-
-
-}
